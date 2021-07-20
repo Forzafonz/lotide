@@ -21,3 +21,17 @@ function assertArraysEqual(array1, array2) {
     console.log(flame, flame, flame, `Assertion Failed`);
   }
 }
+
+function without(array1, array2){
+  result = array1;
+  for (var i = 0; i < array2.length; i++){
+    for (var j = 0; j < array1.length; j++){
+      if (array1[i] === array2[j]){
+        result.splice(i, i+1);
+      }
+    }
+  }
+  return result;
+}
+
+
