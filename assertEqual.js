@@ -9,3 +9,8 @@ const assertEqual = function(actual, expected) {
     console.log(flame, flame, flame, `Assertion Failed: ${actual} !== ${expected}`);
   }
 };
+
+// Export assertEqual
+module.exports = {
+  assertEqual
+};

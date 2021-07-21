@@ -25,7 +25,7 @@ function assertArraysEqual(array1, array2) {
 
 module.exports = {
   assertArraysEqual
-}
+};
 
 if (require.main === module) {
   assertArraysEqual([1,2], [2,3]);
