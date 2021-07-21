@@ -1,3 +1,4 @@
+
 const flame = String.fromCodePoint(0x1F4A5);
 const good = String.fromCodePoint(0x1F929);
 
@@ -20,4 +21,12 @@ function assertArraysEqual(array1, array2) {
   } else {
     console.log(flame, flame, flame, `Assertion Failed`);
   }
+}
+
+module.exports = {
+  assertArraysEqual
+}
+
+if (require.main === module) {
+  assertArraysEqual([1,2], [2,3]);
 }
