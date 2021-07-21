@@ -5,6 +5,9 @@ const test = require('./assertEqual.js');
 // itemsToCount: an object specifying what to count
 const countOnly = function(allItems, itemsToCount) {
   result = clearUp(itemsToCount);
+  result.array.forEach(element => {
+    
+  });
   for (let i = 0; i < allItems.length; i++) {
     if (typeof result[allItems[i]] === "number") {
       result[allItems[i]] += 1;
