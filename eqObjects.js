@@ -91,6 +91,11 @@ const printGoodResult = function() {
 
 // Tests
 
+module.export = {
+  eqObjects
+};
+
+
 if (require.main == module) {
 
   const ab = { a: [1,5], b: "2" };
