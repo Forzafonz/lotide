@@ -1,7 +1,5 @@
 const test = require('./assertEqual.js');
 const testArr = require('./eqArrays.js');
-const flame = String.fromCodePoint(0x1F4A5);
-const good = String.fromCodePoint(0x1F929);
 
 // Returns true if both objects have identical keys with identical values.
 // Return fall otherwise
@@ -65,11 +63,6 @@ const getKeys = function(object) {
 
 // Tests
 
-module.export = {
-  eqObjects
-};
-
-
 if (require.main == module) {
 
   const ab = { a: [1,5], b: "2" };
@@ -99,3 +92,7 @@ if (require.main == module) {
   console.log(eqObjects(obj3, obj4)); // => false
 }
   
+
+module.exports = {
+  eqObjects
+};
