@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@agolubin/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple project that mimics lodash functionality",
   "main": "assertArraysEqual.js",
   "scripts": {
     "test": "mocha"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Forzafonz/lotide.git"
   },
-  "author": "",
+  "author": "Anton Golubin",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Forzafonz/lotide/issues"

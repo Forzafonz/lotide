@@ -1,4 +1,4 @@
-const assertEqual = require('./assertEqual')
+const assertEqual = require('./assertEqual');
 const flame = String.fromCodePoint(0x1F4A5);
 const good = String.fromCodePoint(0x1F929);
 
