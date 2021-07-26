@@ -43,3 +43,8 @@ The following functions are currently implemented:
 * [`flatten(array)`](https://github.com/Forzafonz/lotide/blob/master/countOnly.js): returns an array without nested arrays.
 
 * [`countOnly(inputObject, countCondition)`](https://github.com/Forzafonz/lotide/blob/master/countOnly.js): returns an object which contains a count of items in ***inputObject*** which meets condition passed in ***countCondition***.
+
+* [`eqArrays(array #1, array #2)`](https://github.com/Forzafonz/lotide/blob/master/eqArrays.js): returns ***true*** if array #1 `===` array #2 and return false otherwise.
+
+* [`eqObjects(object #1, object #2)`](https://github.com/Forzafonz/lotide/blob/master/eqObjects.js): returns ***true*** if object #1 `===` object #2 and return false otherwise.
+

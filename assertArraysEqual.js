@@ -1,4 +1,4 @@
-const eqArrays = require('eqArrays');
+const eqArrays = require('./eqArrays.js');
 const flame = String.fromCodePoint(0x1F4A5);
 const good = String.fromCodePoint(0x1F929);
 

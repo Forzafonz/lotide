@@ -1,6 +1,4 @@
 // Implementation of assert function.
-const flame = String.fromCodePoint(0x1F4A5);
-const good = String.fromCodePoint(0x1F929);
 
 function eqArrays(array1, array2) {
   if (array1.length === 0 && array2.length === 0) {

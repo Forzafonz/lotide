@@ -96,6 +96,4 @@ if (require.main == module) {
 }
   
 
-module.exports = {
-  eqObjects
-};
+module.exports = eqObjects

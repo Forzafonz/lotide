@@ -40,7 +40,7 @@ function flatten(array) {
 }
 
 
-if (require.module === main){
+if (require.main === module){
   
   console.log(flatten([1, 2, [3, 4], 5, [6], [7, [8,9]]]));
 
