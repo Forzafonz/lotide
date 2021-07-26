@@ -33,6 +33,4 @@ if (require.main === module) {
 }
   
 // Export takeUntil function
-module.exports = {
-  takeUntil
-};
+module.exports = takeUntil;
