@@ -90,6 +90,9 @@ if (require.main == module) {
   const obj3 = {a: {a:1, b:2, c: {a:1, b:2}}};
   const obj4 = {a: {b:2, a:1, c: {b:2, a:"1"}}};
   console.log(eqObjects(obj3, obj4)); // => false
+  console.log(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => true
+  console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => false
+  console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 })); // => false
 }
   
 
