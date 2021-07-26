@@ -2,14 +2,6 @@
 const flame = String.fromCodePoint(0x1F4A5);
 const good = String.fromCodePoint(0x1F929);
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(good, good, good, `Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(flame, flame, flame, `Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 function eqArrays(array1, array2) {
   if (array1.length === 0 && array2.length === 0) {
     return true;
@@ -32,9 +24,7 @@ function eqArrays(array1, array2) {
 
 // Export
 
-module.export = {
-  eqArrays
-};
+module.exports = eqArrays;
 
 //tests 
 
