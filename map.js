@@ -18,3 +18,4 @@ if (require.main === module) {
   test.assertArraysEqual(map(words2, word => word[0]), []);
 }
 
+module.exports = map;
