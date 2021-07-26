@@ -59,3 +59,5 @@ if (require.main === module) {
   test.assertEqual(result1["Agouhanna"], undefined);
 }
   
+
+module.exports = countOnly;
