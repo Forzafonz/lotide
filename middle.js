@@ -27,6 +27,4 @@ if (require.main === module) {
 }
 //Export
 
-module.exports = {
-  findMiddle
-};
+module.exports = findMiddle;
