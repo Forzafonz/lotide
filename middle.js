@@ -1,5 +1,3 @@
-const tools = require("./assertArraysEqual.js");
-
 // Look for a middle element of array
 const findMiddle = function(array) {
   if (!Array.isArray(array) || array.length < 3) {
