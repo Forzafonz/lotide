@@ -28,7 +28,7 @@ describe("#tail", () => {
 
   describe("#middle", () => {
 
-    it("should return [2,3] for [1, 2, 3]", () => {
+    it("Should return two middle elements for arrrays with even length. should return [3, 4] for array [1, 2, 3, 4, 5,6] should return [3,4] for [1, 2, 3, 4, 5, 6]", () => {
       assert.deepEqual(findMiddle([1, 2, 3, 4, 5, 6]), [3, 4]);
     });
 
@@ -36,4 +36,8 @@ describe("#tail", () => {
       assert.deepEqual(findMiddle([1]), []);
     });
 
+    it("should return one middle element for arrrays with odd length. should return [3] for array [1, 2, 3, 4, 5]", () => {
+      assert.deepEqual(findMiddle([1, 2, 3, 4, 5]), [3]);
+    });
+    
   });
