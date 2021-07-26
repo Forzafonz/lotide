@@ -2,6 +2,7 @@ const assert = require('chai').assert;
 const head   = require('../head');
 const tail   = require('../tail');
 const findMiddle = require('../middle');
+const index = require('../index.js');
 
 
 describe("#head", () => {
@@ -38,6 +39,17 @@ describe("#middle", () => {
 
   it("should return one middle element for arrrays with odd length. should return [3] for array [1, 2, 3, 4, 5]", () => {
     assert.deepEqual(findMiddle([1, 2, 3, 4, 5]), [3]);
+  });
+
+  describe("#eqObject", () => {
+
+    it("should return true for two objects { a: { z: 1 }, b: 2 } and { a: { z: 1 }, b: 2 }", () => {
+      assert.isTrue(index.eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }));
+    });
+  
+    it("should return false for two objects { a: { y: 0, z: 1 }, b: 2 } and { a: { z: 1 }, b: 2 }", () => {
+      assert.isFalse(index.eqObjects({a: { y: 0, z: 1 }} , { a: { z: 1 }, b: 2 }));
+    });
   });
     
 });
