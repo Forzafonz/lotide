@@ -1,4 +1,3 @@
-// import assertArraysEqual  method from assertArraysEqual.js
 const tools = require("./assertArraysEqual.js");
 
 // Look for a middle element of array
